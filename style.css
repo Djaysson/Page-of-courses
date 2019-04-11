@@ -1,0 +1,285 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color:#f3f5f9;
+    outline: 0;
+    font-family: "open sans",Arial,sans-serif;
+    list-style: none;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    
+    
+}
+.fundo{
+    background: url(imagem/fundo12.jpg)  repeat center top fixed;
+
+}
+.conteudo{
+   float: none;
+   margin: 0 auto;
+   padding: 0 10px;
+   
+}
+.menuMobile{
+    background: #320eea;
+    padding: 5px 0;
+    
+
+  
+}
+.menuMobile label{
+ width: auto;
+ cursor: pointer;
+}
+.menuMobile span.menu{
+   
+   color: white;
+   border: 2px solid #fff;
+   width: auto;
+   padding: 5px;
+}
+.menuMobile img.fotousuario{
+    width: 32px;
+    margin-left: 25px;
+    border-radius: 50%;
+}
+.menuMobile .logo{
+    
+    background: white; 
+    width: 34px;
+    border-radius: 8px;
+    float: right;
+   
+}
+.menuPrincipal{
+    background: #320eea;
+    transition: all .7s linear;
+    position: absolute;
+    top: -250px;
+    
+}
+.menuPrincipal li{
+    color: #fff;
+    padding: 15px 15px 15px 36px;
+    border-top: 1px solid #a19b9b;
+    background-repeat:no-repeat; 
+    background-size: 28px;
+    background-position: 0 center;
+
+
+}
+.menuPrincipal li:hover{
+    background-color: #ccc;
+    color: #242424;
+}
+.menuPrincipal li.blog{
+    background-image: url('./imagem/blog-icon.png');
+
+}
+.menuPrincipal li.cursos{
+    background-image: url('./imagem/cursos-icon.png');
+}
+.menuPrincipal li.registrar{
+    background-image: url('./imagem/registrar-icon.png');
+}
+.menuPrincipal li.login{
+    background-image: url('./imagem/login-icon.png');
+}
+.menuPrincipal li.sair{
+    background-image: url('./imagem/sair-icon.png');
+}
+#abrirMenu{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+#abrirMenu:checked ~ ul{
+  top: 42px;
+}
+.menuMobile .celular, .menuMobile .email{
+    display: none;
+    width: auto;
+    padding-top: 3px;
+       
+}
+.menuMobile .celular strong, .menuMobile .email strong
+.menuMobile .celular span, .menuMobile .email span{
+        font-size: 12px;   
+     }
+        
+.menuMobile .celular {
+         margin-left: 56px;
+    }
+.menuMobile .celular img, .menuMobile .email img{
+        width: 16px;
+        background-color: #242424;
+        border-radius: 3px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+       
+    }
+.menuMobile .celular strong, .menuMobile .email strong{
+        width: auto;
+        
+    }
+
+section.cursos article{
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+section.cursos article h2{
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+section.cursos article .info{
+    padding: 14px;
+}
+section.cursos article .info img{
+    width: 24px;
+}
+section.cursos article .info span{
+     width: auto;
+     margin-left: 5px;
+     padding-top: 5px;
+     color: #fbf7f7;;
+}   
+
+section.cursos article .info img.avaliacao{
+     margin-left:32px;
+}
+section.cursos article .info strong{
+    width: auto;
+    float: right;
+    padding-top: 5px;
+    color: green;
+}
+section.cursos article .info strong.cursoPago{
+    color: red;
+
+}
+
+
+
+
+
+
+/************************** Css para tela acima de 425px***********************/
+ @media screen and (min-width:425px){
+
+    .conteudo{
+        max-width: 425px;
+    }
+ }
+/************************** Css para tela acima de 640px***********************/
+@media screen and (min-width:640px){
+    .conteudo{
+        max-width: 640px;
+    }
+    .menuMobile label{
+       display: none; 
+    }
+    .menuMobile img.fotousuario{
+       float: right;
+       width: 40px;
+
+     }
+    .menuMobile .logo{
+       float: left;
+       width: 40px;
+     }
+    .menuMobile{
+       background: #f3f7f6;
+       padding: 10px 0;
+       background: url(imagem/fundo10.jpg) repeat;
+
+    
+     }
+    .menuPrincipal{
+        position: inherit;
+     } 
+     .menuPrincipal li{
+        border-top: 0;
+        padding: 15px 32px 15px 35px;
+        font-size: 14px;
+        background-size: 24px;
+        background-position-x: 5px;
+     }
+     .menuPrincipal a{
+         width: auto;
+     }
+     .menuPrincipal a.sair{
+         float: right;
+     }
+     
+    .menuMobile .celular, .menuMobile .email{
+      display: block;
+    } 
+    section.cursos article{
+        width: 305px;
+        margin-right: 10px;
+    }
+    section.cursos article:nth-child(2n){
+        margin-right: 0px;
+    }
+}
+
+/************************** Css para tela acima de 960px***********************/
+@media screen and (min-width:960px){
+    .conteudo{
+        max-width: 960px;
+    }
+    .menuMobile .logo {
+        width: 90px;
+    }
+    .menuMobile {
+        padding: 2px;
+    }
+    .menuMobile .celular img, .menuMobile .email img {
+        width: 24px;
+    }
+    .menuMobile .celular strong, .menuMobile .email strong
+    .menuMobile .celular span, .menuMobile .email span{
+        font-size: 14px;   
+     }
+     .menuMobile .celular, .menuMobile .email {
+        margin-top: 15px;
+     }
+     .menuMobile img.fotousuario {
+        width: 56px;
+        margin-top: 10px;
+     }
+     section.cursos article{
+        width: 298px;
+        margin-right: 10px;
+    }
+     section.cursos article:nth-child(2n){
+        
+        margin-right: 10px;
+    }
+    section.cursos article:nth-child(3n){
+        margin-right: 0px;
+    }
+    
+}    
+
+/************************** Css para tela acima de 1280px***********************/
+@media screen and (min-width:1280px){
+    .conteudo{
+        max-width: 1280px;
+    }
+    section.cursos article{
+        width: 306px;
+        margin-right: 10px;
+    }
+    section.cursos article:nth-child(3n){
+        margin-right: 10px;
+    }
+    section.cursos article:nth-child(4n){
+        margin-right: 0px;
+    }
+}   
