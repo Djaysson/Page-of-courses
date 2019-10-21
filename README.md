@@ -1,4 +1,4 @@
-Page-of-courses-usuario
+#Page-of-courses
 
 It is a simple user page of courses that also adapts to the mobile.
 
